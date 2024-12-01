@@ -1,0 +1,742 @@
+<!--[if IE]>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">>
+<HTML>
+<HEAD>
+<meta name="dcs_pagename" content="Meas8 on 普通层动触头仿真"></meta>
+<link rel="stylesheet" type="text/css" href="dcs_print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="dcs_screen.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="Images\dcs_screen2.css" media="screen"/>
+<SCRIPT language="JavaScript" SRC="Images\jquery-latest.min.js"></SCRIPT>
+<SCRIPT language="JavaScript" SRC="Images\dcs_script2.js"></SCRIPT>
+<link class="theme default" rel="stylesheet" type="text/css" href="Images\theme.default.css"/>
+<link class="theme blue" rel="stylesheet" type="text/css" href="Images\theme.blue.css"/>
+<link class="theme green" rel="stylesheet" type="text/css" href="Images\theme.green.css"/>
+<link class="theme grey" rel="stylesheet" type="text/css" href="Images\theme.grey.css"/>
+<link class="theme ice" rel="stylesheet" type="text/css" href="Images\theme.ice.css"/>
+<link class="theme black-ice" rel="stylesheet" type="text/css" href="Images\theme.black-ice.css"/>
+<link class="theme dark" rel="stylesheet" type="text/css" href="Images\theme.dark.css"/>
+<link class="theme dropbox" rel="stylesheet" type="text/css" href="Images\theme.dropbox.css"/>
+<link class="theme metro-dark" rel="stylesheet" type="text/css" href="Images\theme.metro-dark.css"/>
+<link rel="stylesheet" href="Images\bootstrap.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="Images\favicon.png"/>
+<SCRIPT language="JavaScript" SRC="Images\jquery.tablesorter.js"></SCRIPT>
+<SCRIPT language="JavaScript" SRC="Images\jquery.tablesorter.widgets.js"></SCRIPT>
+<SCRIPT language="JavaScript" SRC="Images\jquery.magnific-popup.min.js"></SCRIPT>
+<SCRIPT language="JavaScript" SRC="Images\bootstrap.min.js"></SCRIPT>
+<STYLE>.hover_image img { border: 1px solid black }</STYLE>
+<TITLE>3DCS Variation Analysis: 普通层动触头仿真</TITLE>
+</HEAD>
+<body onbeforeprint="OnBeforePrint()" onafterprint="OnAfterPrint()" onload=OnLoad() onmousedown = OnMouseDown(event) onmouseup = OnMouseUp(event) onmousemove = OnMouseMove(event) onresize = OnResize() data-time-created="1732077916000">
+<BASEFONT FACE="Verdana, Arial">
+<a id="hoverdisplaylink">
+<div id="hoverdisplaydiv" style=" width: 711px; height: 400px;">
+<img id="hoverdisplay" width="711" height="400">
+</div>
+</a>
+<div id="headercontent">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="row">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<p class="navbar-brand" style="margin-bottom:0;">
+<img src="Images\dcs_logo.png">3DCS Variation Analysis
+</p>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><A HREF='普通层动触头仿真_report.html' onclick="OnClick('普通层动触头仿真_report.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Home</A></li><li><A HREF='普通层动触头仿真_report_Model_Summary.html' onclick="OnClick('普通层动触头仿真_report_Model_Summary.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Model Summary</A></li><li><A HREF='普通层动触头仿真_report_Analysis_Results.html' onclick="OnClick('普通层动触头仿真_report_Analysis_Results.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Analysis Results</A></li><li class="dropdown"><A HREF='#' onclick="OnClick('#');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="" class="dropdown-toggle" data-toggle="dropdown"> Model Input<span class="caret"></A><ul class="dropdown-menu"><li><A HREF='普通层动触头仿真_report_Assembly_Sequence.html' onclick="OnClick('普通层动触头仿真_report_Assembly_Sequence.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Assembly Sequence</A></li><li><A HREF='普通层动触头仿真_report_Tolerances.html' onclick="OnClick('普通层动触头仿真_report_Tolerances.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Tolerances</A></li><li><A HREF='普通层动触头仿真_report_GD&Ts.html' onclick="OnClick('普通层动触头仿真_report_GD&Ts.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> GD&Ts</A></li><li><A HREF='普通层动触头仿真_report_Measurements.html' onclick="OnClick('普通层动触头仿真_report_Measurements.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Measurements</A></li></ul></li><li class="dropdown"><A HREF='#' onclick="OnClick('#');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="" class="dropdown-toggle" data-toggle="dropdown"> Information<span class="caret"></A><ul class="dropdown-menu"><li><A HREF='普通层动触头仿真_report_Part_Notes.html' onclick="OnClick('普通层动触头仿真_report_Part_Notes.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Part Notes</A></li><li><A HREF='普通层动触头仿真_report_Component_Information.html' onclick="OnClick('普通层动触头仿真_report_Component_Information.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Component Information</A></li><li><A HREF='普通层动触头仿真_report_Tree_Structure.html' onclick="OnClick('普通层动触头仿真_report_Tree_Structure.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Tree Structure</A></li><li><A HREF='普通层动触头仿真_report_Action_Tree.html' onclick="OnClick('普通层动触头仿真_report_Action_Tree.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Action Tree</A></li><li><A HREF='普通层动触头仿真_report_Analysis_Settings.html' onclick="OnClick('普通层动触头仿真_report_Analysis_Settings.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Analysis Settings</A></li></ul></li><li class="dropdown"><A HREF='#' onclick="OnClick('#');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="" class="dropdown-toggle" data-toggle="dropdown"> Help<span class="caret"></A><ul class="dropdown-menu"><li><A HREF='http://www.3dcs.com/getting-started-3dcs-dimensional-analysis.html' target="_blank" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Understanding this Report</A></li><li><A HREF='https://docs.google.com/forms/d/1DjaHbjMmmHdSmjKAoLPHzix9zP82g2JmbccukfZrkd0/viewform?usp=send_form'.html' target="_blank" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Report Feedback</A></li></ul></li>
+</ul>
+</div>
+</div>
+</div>
+<noscript>
+<div class="headertext">
+<p class="jswarning">
+<strong>You do not have JavaScript enabled. JavaScript is required to correctly view this report.</strong>
+</p>
+</div>
+</noscript>
+<p class="dcsscreen2warning">
+<strong>Warning: dcs_screen2.css is missing.</strong>
+</p>
+</nav>
+</div>
+<div class="headerspacer" style="height:50px">
+</div>
+<div id="maincontent">
+<div id="border">
+<A NAME = "TOP"></A>
+<h3>Measurements: 2. Meas8 on 普通层动触头仿真</h3>
+<p id="description"></p>
+<div style="margin-left: -15px;" class="container-fluid">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#montecarloanalysis">
+Monte Carlo Analysis
+</a>
+</li>
+<script>setDefaultTab("montecarloanalysis");</script>
+<li>
+<a data-toggle="tab" href="#geofactorequation-basedanalysis">
+GeoFactor Equation-Based Analysis
+</a>
+</li>
+
+<li>
+<a data-toggle="tab" href="#contributoranalysis">
+Contributor Analysis
+</a>
+</li>
+
+<li>
+<a data-toggle="tab" href="#input">
+Input
+</a>
+</li>
+
+</ul>
+<div class="tab-content">
+<div id="input" class="tab-pane">
+<div id="measzoom">
+<TABLE id="measnosorttable" class="tablesorter" BORDER = 1 CELLPADDING = "5">
+<THead>
+<TR><TD title="Name used in the model">Name</TD><TD title="Assembly level of the measure">Parent</TD><TD title="Type of measure used">Type</TD><TD title="Value of the measure without variation">Nominal</TD><TD title="(Upper Specification Limit) Highest acceptable value for the measure">USL</TD><TD title="(Lower Specification Limit) Lowest acceptable value for the measure">LSL</TD><TD title="Features used in the measure">Features List 1</TD><TD title="Features used in the measure">Features List 2</TD></TR>
+</THead>
+<TR><TD>Meas8</TD><TD>普通层动触头仿真</TD><TD><IMG SRC="C:\Users\b6255\My Documents\DCS\DCS_CREO\reports\普通层动触头仿真\html\Images\dcsIcon563.png" height="24" width="24" ALT="dcsIcon563" />GeneralType</TD><TD>+178.466777</TD><TD>+179.466778 deg</TD><TD>+177.466778 deg</TD><TD>CadSurf9(Fr1)</TD><TD>CadSurf9(To1)</TD></TR>
+</TABLE>
+</div>
+<IMG SRC="Images\普通层动触头仿真_report_Meas8_普通层动触头仿真.png" height="400" width="711" ALT="普通层动触头仿真_report_Meas8_普通层动触头仿真" />
+</div>
+<div id="notes" class="tab-pane">
+
+</div>
+<div id="montecarloanalysis" class="tab-pane">
+<button id="simuselcolbutton" class="selcolbutton" onclick="$('#simuselectcolumns').toggleClass('displayNone')">Select columns...</button>
+<div id="simuselectcolumns" class="selectcolumnsdiv displayNone">
+<h1>Select Columns</h1>
+<img  id="simuhideselcolbutton" class="closeButton" alt="Close Button" onclick="$('#simuselectcolumns').toggleClass('displayNone')">
+<button id="simu_selcol_selectall_button" class="selcolbutton" onclick="simuSelectColumns_SelectAll()">Select all</button>
+<button id="simu_selcol_unselectall_button" class="selcolbutton" onclick="simuSelectColumns_UnselectAll()">Unselect all</button>
+<br>
+<input id="simudatatable_colsel_IsRunsOn" type="checkbox" name="IsRunsOn" num="0" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsRunsOn" class="checkboxlabel"><span>IsRunsOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsAcceptOn" type="checkbox" name="IsAcceptOn" num="1" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsAcceptOn" class="checkboxlabel"><span>IsAcceptOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsNomiValOn" type="checkbox" name="IsNomiValOn" num="2" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsNomiValOn" class="checkboxlabel"><span>IsNomiValOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsMedianOn" type="checkbox" name="IsMedianOn" num="3" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsMedianOn" class="checkboxlabel"><span>IsMedianOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsMeanOn" type="checkbox" name="IsMeanOn" num="4" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsMeanOn" class="checkboxlabel"><span>IsMeanOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLMeanHighOn" type="checkbox" name="IsCLMeanHighOn" num="5" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLMeanHighOn" class="checkboxlabel"><span>IsCLMeanHighOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLMeanLowOn" type="checkbox" name="IsCLMeanLowOn" num="6" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLMeanLowOn" class="checkboxlabel"><span>IsCLMeanLowOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsSTDOn" type="checkbox" name="IsSTDOn" num="7" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsSTDOn" class="checkboxlabel"><span>IsSTDOn</span></label>
+<br>
+<input id="simudatatable_colsel_Is6STDOn" type="checkbox" name="Is6STDOn" num="8" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_Is6STDOn" class="checkboxlabel"><span>Is6STDOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLSTDHighOn" type="checkbox" name="IsCLSTDHighOn" num="9" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLSTDHighOn" class="checkboxlabel"><span>IsCLSTDHighOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLSTDLowOn" type="checkbox" name="IsCLSTDLowOn" num="10" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLSTDLowOn" class="checkboxlabel"><span>IsCLSTDLowOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsSkewOn" type="checkbox" name="IsSkewOn" num="11" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsSkewOn" class="checkboxlabel"><span>IsSkewOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsKurtOn" type="checkbox" name="IsKurtOn" num="12" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsKurtOn" class="checkboxlabel"><span>IsKurtOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsPpOn" type="checkbox" name="IsPpOn" num="13" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsPpOn" class="checkboxlabel"><span>IsPpOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsPpkOn" type="checkbox" name="IsPpkOn" num="14" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsPpkOn" class="checkboxlabel"><span>IsPpkOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsMinOn" type="checkbox" name="IsMinOn" num="15" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsMinOn" class="checkboxlabel"><span>IsMinOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsMaxOn" type="checkbox" name="IsMaxOn" num="16" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsMaxOn" class="checkboxlabel"><span>IsMaxOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsRangeOn" type="checkbox" name="IsRangeOn" num="17" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsRangeOn" class="checkboxlabel"><span>IsRangeOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsLSLOn" type="checkbox" name="IsLSLOn" num="18" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsLSLOn" class="checkboxlabel"><span>IsLSLOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsUSLOn" type="checkbox" name="IsUSLOn" num="19" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsUSLOn" class="checkboxlabel"><span>IsUSLOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsLoutOn" type="checkbox" name="IsLoutOn" num="20" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsLoutOn" class="checkboxlabel"><span>IsLoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsRoutOn" type="checkbox" name="IsRoutOn" num="21" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsRoutOn" class="checkboxlabel"><span>IsRoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsTotOutOn" type="checkbox" name="IsTotOutOn" num="22" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsTotOutOn" class="checkboxlabel"><span>IsTotOutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLLoutOnHigh" type="checkbox" name="IsCLLoutOnHigh" num="23" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLLoutOnHigh" class="checkboxlabel"><span>IsCLLoutOnHigh</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLLoutOnLow" type="checkbox" name="IsCLLoutOnLow" num="24" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLLoutOnLow" class="checkboxlabel"><span>IsCLLoutOnLow</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLHoutOnHigh" type="checkbox" name="IsCLHoutOnHigh" num="25" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLHoutOnHigh" class="checkboxlabel"><span>IsCLHoutOnHigh</span></label>
+<br>
+<input id="simudatatable_colsel_IsCLHoutOnLow" type="checkbox" name="IsCLHoutOnLow" num="26" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsCLHoutOnLow" class="checkboxlabel"><span>IsCLHoutOnLow</span></label>
+<br>
+<input id="simudatatable_colsel_IsRngLoutOn" type="checkbox" name="IsRngLoutOn" num="27" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsRngLoutOn" class="checkboxlabel"><span>IsRngLoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsRngRoutOn" type="checkbox" name="IsRngRoutOn" num="28" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsRngRoutOn" class="checkboxlabel"><span>IsRngRoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsTotRngOutOn" type="checkbox" name="IsTotRngOutOn" num="29" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsTotRngOutOn" class="checkboxlabel"><span>IsTotRngOutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsDpmoOn" type="checkbox" name="IsDpmoOn" num="30" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsDpmoOn" class="checkboxlabel"><span>IsDpmoOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsZstOn" type="checkbox" name="IsZstOn" num="31" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsZstOn" class="checkboxlabel"><span>IsZstOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstTypeOn" type="checkbox" name="IsEstTypeOn" num="32" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstTypeOn" class="checkboxlabel"><span>IsEstTypeOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstMedianOn" type="checkbox" name="IsEstMedianOn" num="33" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsEstMedianOn" class="checkboxlabel"><span>IsEstMedianOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstLowOn" type="checkbox" name="IsEstLowOn" num="34" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstLowOn" class="checkboxlabel"><span>IsEstLowOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstHighOn" type="checkbox" name="IsEstHighOn" num="35" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstHighOn" class="checkboxlabel"><span>IsEstHighOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstRangeOn" type="checkbox" name="IsEstRangeOn" num="36" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstRangeOn" class="checkboxlabel"><span>IsEstRangeOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstPpOn" type="checkbox" name="IsEstPpOn" num="37" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsEstPpOn" class="checkboxlabel"><span>IsEstPpOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstPpkOn" type="checkbox" name="IsEstPpkOn" num="38" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsEstPpkOn" class="checkboxlabel"><span>IsEstPpkOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstLoutOn" type="checkbox" name="IsEstLoutOn" num="39" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstLoutOn" class="checkboxlabel"><span>IsEstLoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstHoutOn" type="checkbox" name="IsEstHoutOn" num="40" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstHoutOn" class="checkboxlabel"><span>IsEstHoutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstTotOutOn" type="checkbox" name="IsEstTotOutOn" num="41" target="simudatatable" anlyType="simu" checked>
+<label for="simudatatable_colsel_IsEstTotOutOn" class="checkboxlabel"><span>IsEstTotOutOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstDpmoOn" type="checkbox" name="IsEstDpmoOn" num="42" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsEstDpmoOn" class="checkboxlabel"><span>IsEstDpmoOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsEstZstOn" type="checkbox" name="IsEstZstOn" num="43" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsEstZstOn" class="checkboxlabel"><span>IsEstZstOn</span></label>
+<br>
+<input id="simudatatable_colsel_IsGdtBoxValueOn" type="checkbox" name="IsGdtBoxValueOn" num="44" target="simudatatable" anlyType="simu">
+<label for="simudatatable_colsel_IsGdtBoxValueOn" class="checkboxlabel"><span>IsGdtBoxValueOn</span></label>
+<br>
+</div>
+<TABLE class="tablesorter-green" id="simudatatable">
+<THEAD>
+<TR>
+<TD NOWRAP class="tablesorter-header" title="Number of Monte Carlo simulation runs (builds)"  style=" text-align: right">
+Runs</TD>
+<TD NOWRAP class="tablesorter-header" title="Number of accepted runs"  style=" text-align: right">
+Accept</TD>
+<TD NOWRAP class="tablesorter-header" title="Value of the measure without variation"  style=" text-align: right">
+Nominal</TD>
+<TD NOWRAP class="tablesorter-header" title="Median value of the simulation results"  style=" text-align: right">
+Median</TD>
+<TD NOWRAP class="tablesorter-header" title="Arithmetic mean of the simulation results"  style=" text-align: right">
+Mean</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval lower bound of the mean assuming a normal distribution"  style=" text-align: right">
+CL90%MeanLow</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval upper bound of the mean assuming a normal distribution"  style=" text-align: right">
+CL90%MeanHigh</TD>
+<TD NOWRAP class="tablesorter-header" title="Standard deviation (sigma) of the simulation results"  style=" text-align: right">
+Sigma</TD>
+<TD NOWRAP class="tablesorter-header" title="Range of 6.00 standard deviations"  style=" text-align: right">
+6-Sigma</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval lower bound of the standard deviation assuming a normal distribution"  style=" text-align: right">
+CL90%SigmaLow</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval upper bound of the standard deviation assuming a normal distribution"  style=" text-align: right">
+CL90%SigmaHigh</TD>
+<TD NOWRAP class="tablesorter-header" title="Skewness of the simulation results"  style=" text-align: right">
+Skewness</TD>
+<TD NOWRAP class="tablesorter-header" title="Kurtosis of the simulation results"  style=" text-align: right">
+Kurtosis</TD>
+<TD NOWRAP class="tablesorter-header" title="Process performance of the simulation results"  style=" text-align: right">
+Pp</TD>
+<TD NOWRAP class="tablesorter-header" title="Process performance index of the simulation results"  style=" text-align: right">
+Ppk</TD>
+<TD NOWRAP class="tablesorter-header" title="Minimum value measured during simulation"  style=" text-align: right">
+Min</TD>
+<TD NOWRAP class="tablesorter-header" title="Maximum value measured during simulation"  style=" text-align: right">
+Max</TD>
+<TD NOWRAP class="tablesorter-header" title="Difference between the maximum value and minimum value"  style=" text-align: right">
+Range</TD>
+<TD NOWRAP class="tablesorter-header" title="(Lower Specification Limit) Lowest acceptable value for the measure"  style=" text-align: right">
+LSL</TD>
+<TD NOWRAP class="tablesorter-header" title="(Upper Specification Limit) Highest acceptable value for the measure"  style=" text-align: right">
+USL</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs below the Lower Specification Limit"  style=" text-align: right">
+L-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs above the Upper Specification Limit"  style=" text-align: right">
+H-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs outside of the specification limits"  style=" text-align: right">
+Tot-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval lower bound of  the lower %Out assuming a normal distribution"  style=" text-align: right">
+CL90%L-OUT-Low</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval upper bound of  the lower %Out assuming a normal distribution"  style=" text-align: right">
+CL90%L-OUT-High</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval lower bound of  the upper %Out assuming a normal distribution"  style=" text-align: right">
+CL90%H-OUT-Low</TD>
+<TD NOWRAP class="tablesorter-header" title="Confidence interval upper bound of  the upper %Out assuming a normal distribution"  style=" text-align: right">
+CL90%H-OUT-High</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs between the Lower Specification Limit and 6.00-Sigma"  style=" text-align: right">
+RngL-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs between the Upper Specification Limit and +6.00-Sigma"  style=" text-align: right">
+RngH-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of runs between the Lower Specification Limit and -6.00-Sigma and between the Upper Specification Limit and +6.00-Sigma"  style=" text-align: right">
+TotRng-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Defects Per Million Opportunities (Parts Per Million) assuming normal distribution"  style=" text-align: right">
+DPMO(PPM)</TD>
+<TD NOWRAP class="tablesorter-header" title="Short term Zscore (= Z-bench + Z-shift)"  style=" text-align: right">
+Zst</TD>
+<TD NOWRAP class="tablesorter-header" title="Distribution type that best fits the simulation results"  style=" text-align: left">
+Est.Type</TD>
+<TD NOWRAP class="tablesorter-header" title="Median of the estimated curve fit data"  style=" text-align: right">
+Est.Median</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated min of the curve fit (based on -6.00 standard deviations)"  style=" text-align: right">
+Est.Low</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated max of the curve fit (based on +6.00 standard deviations)"  style=" text-align: right">
+Est.High</TD>
+<TD NOWRAP class="tablesorter-header" title="Difference between Est.Min and Est.Max"  style=" text-align: right">
+Est.Range</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated process performance of the simulation results"  style=" text-align: right">
+Est.Pp</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated process performance index of the simulation results"  style=" text-align: right">
+Est.Ppk</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling below the Lower Specification Limit"  style=" text-align: right">
+Est.L-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling above the Upper Specification Limit"  style=" text-align: right">
+Est.H-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling outside of the specification limits"  style=" text-align: right">
+Est.Tot-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Defects Per Million Opportunities (Parts Per Million) of the estimate curve"  style=" text-align: right">
+Est.DPMO(PPM)</TD>
+<TD NOWRAP class="tablesorter-header" title="Short term Zscore (= Z-bench + Z-shift) of the estimated curve"  style=" text-align: right">
+Est.Zst</TD>
+<TD NOWRAP class="tablesorter-header" title="Value that should be used when comparing to GD&T drawings."  style=" text-align: right">
+Recommended GD&T Value</TD>
+</TR></THEAD>
+<TR><TD NOWRAP  style=" text-align: right">
+10000</TD>
+<TD NOWRAP  style=" text-align: right">
+10000</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.11(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.65(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.11(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.11(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.02</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00</TD>
+<TD NOWRAP  style=" text-align: right">
+3.09</TD>
+<TD NOWRAP  style=" text-align: right">
+3.09</TD>
+<TD NOWRAP  style=" text-align: right">
+178.05(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.88(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.83(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+177.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+179.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00</TD>
+<TD NOWRAP  style=" text-align: right">
+9.00</TD>
+<TD NOWRAP  style=" text-align: left">
+Normal</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.14(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.79(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.65(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+3.09</TD>
+<TD NOWRAP  style=" text-align: right">
+3.09</TD>
+<TD NOWRAP  style=" text-align: right">
+-0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00</TD>
+<TD NOWRAP  style=" text-align: right">
+9.00</TD>
+<TD NOWRAP  style=" text-align: right">
+N/A</TD>
+</TR></TABLE>
+<br><IMG SRC="Images\普通层动触头仿真_reportMeas8_普通层动触头仿真.png" ALT="Images\普通层动触头仿真_reportMeas8_普通层动触头仿真.png not found"
+</IMG>
+<div id="simuselimage">
+<div id="simuselimage_sub">
+<IMG SRC="Images\普通层动触头仿真_report_Meas8_普通层动触头仿真.png" height="400" width="711" ALT="普通层动触头仿真_report_Meas8_普通层动触头仿真" />
+<div id="simuselimage_overlay">Nominal</div>
+</div>
+<div id="simuselimage_sub">
+<IMG SRC="Images\普通层动触头仿真_report_Meas8_普通层动触头仿真_Min.png" height="400" width="711" ALT="普通层动触头仿真_report_Meas8_普通层动触头仿真_Min" />
+<div id="simuselimage_overlay">Est. Low</div>
+</div>
+<div id="simuselimage_sub">
+<IMG SRC="Images\普通层动触头仿真_report_Meas8_普通层动触头仿真_Max.png" height="400" width="711" ALT="普通层动触头仿真_report_Meas8_普通层动触头仿真_Max" />
+<div id="simuselimage_overlay">Est. High</div>
+</div>
+<div id="simuselimage_controls">
+<input id="animate_nominal" type="button" value="Nominal" onclick="onAnimateNominal()">
+<input id="animate_min" type="button" value="Est. Low" onclick="onAnimateMin()">
+<input id="animate_max" type="button" value="Est. High" onclick="onAnimateMax()">
+<input id="animate_start" type="button" value="Animate" onclick="onAnimate()">
+</div>
+</div>
+<p style="page-break-after: always">
+</div>
+<div id="contributoranalysis" class="tab-pane">
+<A NAME ="JUMPMEAS1"></A>
+<div id="senszoom0">
+<TABLE id="senstable0" class="fixedwidth" BORDER = 1 CELLSPACING=1 CELLPADDING=5>
+<THEAD ALIGN="CENTER" VALIGN="BASELINE">
+<TR style="background-color: #D9D9F3">
+<TH title = "Index Number" style=" text-align: right">Index</TH>
+<TH title = "Name of the contributor">Contributor</TH>
+<TH title = "Part the contributor is in" style=" text-align: left">Part</TH>
+<TH title = "Total range of variation" style=" text-align: right">Range</TH>
+<TH title = "Ratio of the change of the variation to the change in contributor's range" style=" text-align: right">GeoFactor</TH>
+<TH title = "Expected variation with only this contributor active" style=" text-align: right">6-Sigma</TH>
+<TH title = "Percent of variation caused by the contributor" style=" text-align: right">Contribution</TH>
+<TH title = "Bar graph of contribution to variation" class = "thnoprint" style=" text-align: right">Graph</TH>
+</TR>
+</THEAD>
+<TR VALIGN = TOP>
+<TD style=" text-align: right">1</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_Tole_Tole11_8TZD_285_6062.html' onclick="OnClick('普通层动触头仿真_report_Tole_Tole11_8TZD_285_6062.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Tole11_8TZD_285_6062.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Tole11_8TZD_285_6062.png"class="hover_image"> Tole11</A></TD>
+<TD style=" text-align: left">8TZD_285_6062</TD>
+<TD NOWRAP style=" text-align: right">0.200(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">3.07</TD>
+<TD NOWRAP style=" text-align: right">0.61(deg)</TD>
+<TD NOWRAP style=" text-align: right">89.56%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR VALIGN = TOP style="background-color: #D9D9F3">
+<TD style=" text-align: right">2</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_GD&T_Gtol27_8TZD_285_6062.html' onclick="OnClick('普通层动触头仿真_report_GD&T_Gtol27_8TZD_285_6062.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Gtol27_8TZD_285_6062.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Gtol27_8TZD_285_6062.png"class="hover_image"> Gtol27</A></TD>
+<TD style=" text-align: left">8TZD_285_6062</TD>
+<TD NOWRAP style=" text-align: right">0.060(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">3.07</TD>
+<TD NOWRAP style=" text-align: right">0.18(deg)</TD>
+<TD NOWRAP style=" text-align: right">8.06%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR VALIGN = TOP>
+<TD style=" text-align: right">3</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_Tole_Tole2_8TZD_550_6326.html' onclick="OnClick('普通层动触头仿真_report_Tole_Tole2_8TZD_550_6326.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Tole2_8TZD_550_6326.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Tole2_8TZD_550_6326.png"class="hover_image"> Tole2</A></TD>
+<TD style=" text-align: left">8TZD_550_6326</TD>
+<TD NOWRAP style=" text-align: right">0.060(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">1.53</TD>
+<TD NOWRAP style=" text-align: right">0.09(deg)</TD>
+<TD NOWRAP style=" text-align: right">2.02%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR VALIGN = TOP style="background-color: #D9D9F3">
+<TD style=" text-align: right">4</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_GD&T_Gtol15_8TZD_201_6079.html' onclick="OnClick('普通层动触头仿真_report_GD&T_Gtol15_8TZD_201_6079.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Gtol15_8TZD_201_6079.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Gtol15_8TZD_201_6079.png"class="hover_image"> Gtol15_(Orientation)</A></TD>
+<TD style=" text-align: left">8TZD_201_6079</TD>
+<TD NOWRAP style=" text-align: right">0.025(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">1.37</TD>
+<TD NOWRAP style=" text-align: right">0.03(deg)</TD>
+<TD NOWRAP style=" text-align: right">0.28%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR VALIGN = TOP>
+<TD style=" text-align: right">5</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_GD&T_Gtol13_8TZD_201_6079.html' onclick="OnClick('普通层动触头仿真_report_GD&T_Gtol13_8TZD_201_6079.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Gtol13_8TZD_201_6079.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Gtol13_8TZD_201_6079.png"class="hover_image"> Gtol13</A></TD>
+<TD style=" text-align: left">8TZD_201_6079</TD>
+<TD NOWRAP style=" text-align: right">0.100(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">0.17</TD>
+<TD NOWRAP style=" text-align: right">0.02(deg)</TD>
+<TD NOWRAP style=" text-align: right">0.07%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR VALIGN = TOP style="background-color: #D9D9F3">
+<TD style=" text-align: right">6</TD>
+<TD style=" text-align: left"><A HREF='普通层动触头仿真_report_GD&T_Gtol3_8TZD_043_6234.html' onclick="OnClick('普通层动触头仿真_report_GD&T_Gtol3_8TZD_043_6234.html');return false;" onmouseover="OnImageLinkHover('Images\\普通层动触头仿真_report_Gtol3_8TZD_043_6234.png', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src="Images\\普通层动触头仿真_report_Gtol3_8TZD_043_6234.png"class="hover_image"> Gtol3</A></TD>
+<TD style=" text-align: left">8TZD_043_6234</TD>
+<TD NOWRAP style=" text-align: right">0.200(mm)<BR></TD>
+<TD NOWRAP style=" text-align: right">-0.04</TD>
+<TD NOWRAP style=" text-align: right">0.01(deg)</TD>
+<TD NOWRAP style=" text-align: right">0.02%</TD>
+<TD class = "tdnoprint" style=" text-align: right">
+<TABLE BORDER = 0 CELLSPACING=0 CELLPADDING=0 style="background-color: #0000FF">
+<TR>
+
+<TD>&nbsp;</TD>
+</TR></TABLE>
+</TD>
+</TR>
+</TABLE>
+</div>
+<div id="sensselimage"><IMG SRC="" height="400" width="711" ALT="" /></div>
+</div>
+<div id="geofactorequation-basedanalysis" class="tab-pane">
+<button id="eqselcolbutton" class="selcolbutton" onclick="$('#eqselectcolumns').toggleClass('displayNone')">Select columns...</button>
+<div id="eqselectcolumns" class="selectcolumnsdiv displayNone">
+<h1>Select Columns</h1>
+<img  id="eqhideselcolbutton" class="closeButton" alt="Close Button" onclick="$('#eqselectcolumns').toggleClass('displayNone')">
+<button id="eq_selcol_selectall_button" class="selcolbutton" onclick="eqSelectColumns_SelectAll()">Select all</button>
+<button id="eq_selcol_unselectall_button" class="selcolbutton" onclick="eqSelectColumns_UnselectAll()">Unselect all</button>
+<br>
+<input id="eqdatatable_colsel_IsNomiValOn" type="checkbox" name="IsNomiValOn" num="0" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsNomiValOn" class="checkboxlabel"><span>IsNomiValOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsMeanOn" type="checkbox" name="IsMeanOn" num="1" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsMeanOn" class="checkboxlabel"><span>IsMeanOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsMinOn" type="checkbox" name="IsMinOn" num="2" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsMinOn" class="checkboxlabel"><span>IsMinOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsMaxOn" type="checkbox" name="IsMaxOn" num="3" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsMaxOn" class="checkboxlabel"><span>IsMaxOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsRangeOn" type="checkbox" name="IsRangeOn" num="4" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsRangeOn" class="checkboxlabel"><span>IsRangeOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsLSLOn" type="checkbox" name="IsLSLOn" num="5" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsLSLOn" class="checkboxlabel"><span>IsLSLOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsUSLOn" type="checkbox" name="IsUSLOn" num="6" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsUSLOn" class="checkboxlabel"><span>IsUSLOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstLowOn" type="checkbox" name="IsEstLowOn" num="7" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsEstLowOn" class="checkboxlabel"><span>IsEstLowOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstHighOn" type="checkbox" name="IsEstHighOn" num="8" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsEstHighOn" class="checkboxlabel"><span>IsEstHighOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstRangeOn" type="checkbox" name="IsEstRangeOn" num="9" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsEstRangeOn" class="checkboxlabel"><span>IsEstRangeOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstLoutOn" type="checkbox" name="IsEstLoutOn" num="10" target="eqdatatable" anlyType="eq">
+<label for="eqdatatable_colsel_IsEstLoutOn" class="checkboxlabel"><span>IsEstLoutOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstHoutOn" type="checkbox" name="IsEstHoutOn" num="11" target="eqdatatable" anlyType="eq">
+<label for="eqdatatable_colsel_IsEstHoutOn" class="checkboxlabel"><span>IsEstHoutOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsEstTotOutOn" type="checkbox" name="IsEstTotOutOn" num="12" target="eqdatatable" anlyType="eq" checked>
+<label for="eqdatatable_colsel_IsEstTotOutOn" class="checkboxlabel"><span>IsEstTotOutOn</span></label>
+<br>
+<input id="eqdatatable_colsel_IsGdtBoxValueOn" type="checkbox" name="IsGdtBoxValueOn" num="13" target="eqdatatable" anlyType="eq">
+<label for="eqdatatable_colsel_IsGdtBoxValueOn" class="checkboxlabel"><span>IsGdtBoxValueOn</span></label>
+<br>
+</div>
+<TABLE class="tablesorter-green" id="eqdatatable">
+<THEAD>
+<TR>
+<TD NOWRAP class="tablesorter-header" title="Value of the measure without variation"  style=" text-align: right">
+Nominal</TD>
+<TD NOWRAP class="tablesorter-header" title="Arithmetic mean of the simulation results"  style=" text-align: right">
+Mean</TD>
+<TD NOWRAP class="tablesorter-header" title="Minimum value measured during simulation"  style=" text-align: right">
+Min (WC)</TD>
+<TD NOWRAP class="tablesorter-header" title="Maximum value measured during simulation"  style=" text-align: right">
+Max (WC)</TD>
+<TD NOWRAP class="tablesorter-header" title="Difference between the maximum value and minimum value"  style=" text-align: right">
+Range (WC)</TD>
+<TD NOWRAP class="tablesorter-header" title="(Lower Specification Limit) Lowest acceptable value for the measure"  style=" text-align: right">
+LSL</TD>
+<TD NOWRAP class="tablesorter-header" title="(Upper Specification Limit) Highest acceptable value for the measure"  style=" text-align: right">
+USL</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated min of the curve fit (based on -6.00 standard deviations)"  style=" text-align: right">
+Est.Low</TD>
+<TD NOWRAP class="tablesorter-header" title="Estimated max of the curve fit (based on +6.00 standard deviations)"  style=" text-align: right">
+Est.High</TD>
+<TD NOWRAP class="tablesorter-header" title="Difference between Est.Min and Est.Max"  style=" text-align: right">
+Est.Range</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling below the Lower Specification Limit"  style=" text-align: right">
+Est.L-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling above the Upper Specification Limit"  style=" text-align: right">
+Est.H-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Percentage of the estimated curve falling outside of the specification limits"  style=" text-align: right">
+Est.Tot-OUT%</TD>
+<TD NOWRAP class="tablesorter-header" title="Value that should be used when comparing to GD&T drawings."  style=" text-align: right">
+Recommended GD&T Value</TD>
+</TR></THEAD>
+<TR><TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+177.99(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.95(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.96(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+177.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+179.47(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.14(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+178.79(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+0.65(deg)</TD>
+<TD NOWRAP  style=" text-align: right">
+-0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+0.00%</TD>
+<TD NOWRAP  style=" text-align: right">
+N/A</TD>
+</TR></TABLE>
+<br><IMG SRC="Images\普通层动触头仿真_report_Eq_Meas8_普通层动触头仿真.png" ALT="Images\普通层动触头仿真_report_Eq_Meas8_普通层动触头仿真.png not found"
+</IMG>
+<div id="eqselimage">
+<div id="eqselimage_sub">
+<IMG SRC="Images\普通层动触头仿真_report_Meas8_普通层动触头仿真.png" height="400" width="711" ALT="普通层动触头仿真_report_Meas8_普通层动触头仿真" />
+</div>
+</div>
+<p style="page-break-after: always">
+</div>
+</div>
+<div id="noprint">
+<BR>
+</div>
+</div>
+</div>
+<!-- tab-content -->
+<div class="footerspacer"></div>
+</div>
+</div>
+<div id="noprint">
+<div id="footercontent">
+<div id="border">
+<div id="footertext" style="font-family: Verdana, Arial; margin: 0; min-height: 1.25em;">
+<span style = "font-family: Verdana, Arial;  margin-right: 10px; margin-left: 10px;  float: right; display: block; ">
+<FONT SIZE="4"><B>
+<A HREF='普通层动触头仿真_report_Meas_FC1_普通层动触头仿真.html' onclick="OnClick('普通层动触头仿真_report_Meas_FC1_普通层动触头仿真.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Previous</A>
+<A HREF='普通层动触头仿真_report_Meas_JP_moving_contact1_普通层动触头仿真.html' onclick="OnClick('普通层动触头仿真_report_Meas_JP_moving_contact1_普通层动触头仿真.html');return false;" onmouseover="OnImageLinkHover('', this)" onmouseout="OnImageLinkHover('', this);" dcs_image_src=""> Next</A>
+</B></FONT>
+</span>
+</div>
+</div>
+</div>
+</div>
+</BASEFONT>
+</BODY>
+</HTML>
